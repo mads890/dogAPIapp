@@ -9,9 +9,17 @@ function retrieveImage(breed) {
 
 function showImage(responseJson) {
     console.log(responseJson);
-    $('.results').removeClass('hidden');
-    $(`<img src="${responseJson.message}" class="dogImage" alt="a very cute dog">`).appendTo('.dogPic')
-};
+    if (responseJson.status === 'success') {
+        $('.results').removeClass('hidden');
+        $(`<img src="${responseJson.message}" class="dogImage" alt="a very cute dog">`).appendTo('.dogPic')
+    }
+    else if (responseJson.status === 'error') {
+        $('.results').addClass('hidden');
+        showError();
+        $('.error').append('<p>Your breed was not found. Pick a different one!</p>');
+    }
+}
+
 
 function showError() {
     console.log('an error occurred...')
