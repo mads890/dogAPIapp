@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .results {
+      border: 1px solid purple;
+      padding: 15px;
+  }

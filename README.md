@@ -1,0 +1,1 @@
+This repo uses the dog API to generate random images of dogs based on user input (number of images they want to see or breed of dog)
