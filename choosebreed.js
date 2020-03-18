@@ -16,7 +16,7 @@ function showImage(responseJson) {
     else if (responseJson.status === 'error') {
         $('.results').addClass('hidden');
         showError();
-        $('.error').append('<p>Your breed was not found. Pick a different one!</p>');
+       // $('.error').append('<p>Your breed was not found. Pick a different one!</p>');
     }
 }
 
